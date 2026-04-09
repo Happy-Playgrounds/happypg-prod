@@ -16,12 +16,14 @@ header:
 ---
 
 
+<figure class="align-center">
+<a href="https://d29f0iknz8av0q.cloudfront.net/country-aire-park/IMG_COMBINED.png">
+<img src="https://d29f0iknz8av0q.cloudfront.net/country-aire-park/IMG_COMBINED.png" alt="Image of Playground" /></a>
+</figure>
+
+
 <h3>From Uneven to Unmatched: A Park Transformation in Broken Arrow, OK</h3>
 
-<figure class="align-center">
-<a href="https://d29f0iknz8av0q.cloudfront.net/country-aire-park/A_Playground_Reimagined_Wide.jpg">
-<img src="https://d29f0iknz8av0q.cloudfront.net/country-aire-park/A_Playground_Reimagined_Wide.jpg" alt="Image of Playground" /></a>
-</figure>
 
 Playgrounds are meant to be places of joy—safe, inviting spaces where families gather and kids can play freely. When a playground surface no longer aligns with a city’s expectations for performance and long‑term value, it presents an opportunity to reimagine the space. That was the case for the [City of Broken Arrow, Oklahoma][BA], which recently undertook a major surfacing upgrade at one of its parks.
 
