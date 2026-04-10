@@ -16,10 +16,21 @@ header:
 ---
 
 
-<figure class="align-center">
-<a href="https://d29f0iknz8av0q.cloudfront.net/country-aire-park/IMG_COMBINED.png">
-<img src="https://d29f0iknz8av0q.cloudfront.net/country-aire-park/IMG_COMBINED.png" alt="Image of Playground" /></a>
-</figure>
+<div class="header" style="text-align: center;">
+<h1>A Playground Reimagined</h1>
+<p>From uneven EWF & PIP to clean, durable synthetic turf.<br>Broken Arrow, Oklahoma</p>
+</div>
+
+<div class='image-row' style="display:flex; gap: 6px">
+    <figure class="align-center">
+    <a href="https://d29f0iknz8av0q.cloudfront.net/country-aire-park/IMG_BEFORE.jpeg">
+    <img src="https://d29f0iknz8av0q.cloudfront.net/country-aire-park/IMG_BEFORE.jpeg" alt="Image of Playground" /></a>
+    </figure>
+    <figure class="align-center">
+    <a href="https://d29f0iknz8av0q.cloudfront.net/country-aire-park/IMG_AFTER.jpeg">
+    <img src="https://d29f0iknz8av0q.cloudfront.net/country-aire-park/IMG_AFTER.jpeg" alt="Image of Playground" /></a>
+    </figure>
+</div>
 
 
 <h3>From Uneven to Unmatched: A Park Transformation in Broken Arrow, OK</h3>
