@@ -37,44 +37,41 @@ layout: home
 
 <div class="container">
 
+	<!--
 <div class="row justify-content-center">
-            <h1 class="text-center">Commercial Playground Equipment and Installation across Oklahoma and Arkansas</h1>
-	    <br>
-	    <h3 class="text-left">
-		    Designing and installing for municipalities, schools, churches, and general contractors.
-	    </h3>
-	    <!--<p class="text-center">Happy Playgrounds has a combined 25 years of experience in the playground, shade, shelter, and site amenities business. Our team of professionals is passionate about designing the play experience that is perfect for you, and we are committed to providing you the very best in product and service. We offer a full-service approach to a variety of project types, providing superior service to communities across the Mid-West. We've created hundreds of innovative, safe, and long-lasting outdoor recreational spaces. Consider us your one stop shop for all your comprehensive playground needs. Our team of professionals would love to add you to our family of happy clients!</p> -->
+            <h3 class="text-center">Welcome to Happy Playgrounds</h3>
+	       <p class="text-center">Happy Playgrounds has a combined 25 years of experience in the playground, shade, shelter, and site amenities business. Our team of professionals is passionate about designing the play experience that is perfect for you, and we are committed to providing you the very best in product and service. We offer a full-service approach to a variety of project types, providing superior service to communities across the Mid-West. We've created hundreds of innovative, safe, and long-lasting outdoor recreational spaces. Consider us your one stop shop for all your comprehensive playground needs. Our team of professionals would love to add you to our family of happy clients!</p>
 </div>
-	    <h4 class="text-left">
-		As the <strong>exclusive Playworld representative</strong>, we deliver innovative, durable playground systems backed by over 25 years of experience.
-	    </h4>
+	-->
 
+	<section class="hero">
+  		<div class="hero-inner">
+    		<div class="hero-heading-wrap">
+      			<h1>
+        		Planned Right.<br>
+        		Built Right.
+      			</h1>
+    		</div>
 
-    <div class="container my-5">
-  <div class="row justify-content-center">
-    <div class="col-12 col-lg-8 text-center">
+    		<p class="hero-subheadline">
+      			We help schools, parks, and communities plan, design, and build
+      			playgrounds, shade, surfacing, and site amenities from start to finish.
+    		</p>
 
-      <h3>Playworld 2026 New Product Convention</h3>
-      <h4>Watch our short video below</h4>
-      <p>
-         To the Moon! 🚀
-      </p>
+    		<p class="hero-support">
+      			Serving Oklahoma and Arkansas with responsive quoting, design support, and turnkey installation.
+    		</p>
+  		</div>
+	</section>
 
-      <div class="responsive-video-container">
-        <iframe
-          src="https://www.youtube.com/embed/N2BNogMP3ac?si=rc3wDm-RMSkyuX-E"
-          title="Playworld 2026 Sales Conference"
-          frameborder="0"
-          allowfullscreen>
-        </iframe>
-      </div>
+	<section class="promo">
+  		<p class="promo-eyebrow">Spring Sale</p>
+  		<h3>Happy Savings on Select Playworld Products</h3>
+  		<p>Plan your project now and take advantage of current offers.</p>
+  		<a href="https://happypg-web.s3.amazonaws.com/Happy_2026_1H_Promo.pdf" class="btn">View Sale Items</a>
+	</section>
 
-      </div>
-      </div>
-      </div>
-
-
-
+	<!--
 <div class="row justify-content-center">
         <div class="col">
          </div>
@@ -83,8 +80,6 @@ layout: home
          </div>
         <div class="col-4 col-sm-4">
 		<br>
-		<!-- <h4 class="text-center" style="vertical-align: middle"><br>Flash Sale. Woohoo!</h4>   -->
-		<!-- <h4 class="text-center" style="vertical-align: middle"><br>Flash Sale. Woohoo!</h4>   -->
 		<h4 class="text-center" style="vertical-align: middle">Spring Sale. Happy Savings.</h4>
          </div>
         <div class="col-3 col-sm-3">
@@ -96,10 +91,10 @@ layout: home
 
 <div class="row justify-content-center">
         <div class="col-12">
-		<!--<h4 class="text-center">View PLAYWORLD's 2026 sale items <a href="https://happypg-web.s3.amazonaws.com/Happy_2026_1H_Promo.pdf">here</a></h4> -->
 	    <h4 class="text-center">View PLAYWORLD's 2026 sale items click here <a href="https://happypg-web.s3.amazonaws.com/Happy_2026_1H_Promo.pdf" <i class="fa fa-external-link" aria-hidden="true" target="_blank"></i></a></h4> 
          </div>
 </div>
+	-->
 
         <!-- <div class="col-12 text-center">
 		  <h4 class="text-center">View PLAYWORLD's 2025 flash sale items click here <a href="https://happypg-web.s3.amazonaws.com/Happy_2025_2H_Flash.pdf" <i class="fa fa-external-link" aria-hidden="true" target="_blank"></i></a></h4> 
@@ -116,10 +111,11 @@ layout: home
 
 
 
-      <!--<div class="mt-2">
+      <!--
+	      <div class="mt-2">
 
 
-<!-- <div class="row justify-content-center my-4">
+ <div class="row justify-content-center my-4">
   <div class="col-12 col-lg-10 text-center">
 
     <img
@@ -140,18 +136,19 @@ layout: home
         Read the announcement
     </a>
 
--->
 
-    <!-- Optional button to a deeper page -->
-    <!--
+
+     Optional button to a deeper page 
+    
     <a href="/awards" class="btn btn-primary mt-2">Read the announcement</a>
-    -->
-<!-- 
+    
+ 
   </div>
-</div> -->
+</div>
 
 
 </div>
+     -->
 
 
 <!-- <div class="row justify-content-center">
@@ -560,7 +557,7 @@ layout: home
     </div>
 
     <div class="container my-5">
-  <div class="row justify-content-center">
+    <div class="row justify-content-center">
     <div class="col-12 col-lg-8 text-center">
 
       <h3>Partner Spotlight</h3>
@@ -578,9 +575,26 @@ layout: home
         </iframe>
       </div>
 
+
+
+      			<h3>Playworld 2026 New Product Convention</h3>
+      			<h4>Watch our short video below</h4>
+      			<p>
+         			To the Moon! 🚀
+      			</p>
+
+      		<div class="responsive-video-container">
+        		<iframe
+          		src="https://www.youtube.com/embed/N2BNogMP3ac?si=rc3wDm-RMSkyuX-E"
+          		title="Playworld 2026 Sales Conference"
+          		frameborder="0"
+          		allowfullscreen>
+        		</iframe>
+      		</div>
       <a href="/contact" class="btn btn-primary btn-lg mt-3">
         Start Your Project
       </a>
+
 
       <!--<div class="mt-2">
         <a href="/community/south-tulsa-baptist-playground-story/">
