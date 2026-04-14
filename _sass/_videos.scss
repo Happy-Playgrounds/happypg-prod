@@ -554,3 +554,29 @@ $marketing-site-three-up-width: 1200px;
   }
 }
 
+.hero-title {
+  max-width: 1000px; /* ↓ was too wide */
+  margin: 0 auto 1.25rem;
+}
+
+.hero-subhead {
+  max-width: 1000px;
+  margin: 0 auto 1rem;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  line-height: 1.45;
+  font-weight: 400;
+  color: #555;
+}
+
+.hero-proof {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+  line-height: 1.3;
+  font-weight: 400;
+  color: #222;
+}
+
+.hero-proof strong {
+  font-weight: 700;
+}
