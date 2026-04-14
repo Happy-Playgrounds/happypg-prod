@@ -6,13 +6,13 @@ main:
   - title: "About Us"
     #url: /about/
     url: /about/
-  - title: "Our Products"
+  - title: "Products"
     #url: https://mmistakes.github.io/minimal-mistakes/about/
     url: /our-products/
-  - title: "Our Services"
+  - title: "Services"
     #url: https://mmistakes.github.io/minimal-mistakes/about/
     url: /our-services/
-  - title: "Gallery"
+  - title: "Projects"
     #url: https://mmistakes.github.io/minimal-mistakes/about/
     url: /gallery/
   - title: "Blog"
