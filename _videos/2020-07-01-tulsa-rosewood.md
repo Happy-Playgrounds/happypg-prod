@@ -1,6 +1,7 @@
 ---
 title: Broken Arrow, Oklahoma - Rosewood Elementary
 happy_id: 3
+sitemap: false
 date: 2020-07-01
 image: BA-rosewood-vlog2.jpg
 happysource: https://d20hbmrdzpuuak.cloudfront.net/711a9422-84e8-4702-bbd7-eaf61207e511/AppleHLS1/rosewood-mulch.m3u8

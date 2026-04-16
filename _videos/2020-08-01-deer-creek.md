@@ -1,6 +1,7 @@
 ---
 title: Edmond, Oklahoma - The Antler Way
 happy_id: 4
+sitemap: false
 date: 2020-08-01
 image: deer-creek2.jpg
 happysource: https://d20hbmrdzpuuak.cloudfront.net/8714a2ce-a3ea-4f12-aebf-95b6fc82bcb5/AppleHLS1/deer-creek.m3u8
