@@ -1,0 +1,205 @@
+
+{% assign form_type = include.form_type %}
+
+<h2>
+  {% if form_type == "quote" %}
+    Request a Quote
+  {% else %}
+    Email Us
+  {% endif %}
+</h2>
+
+<form id="contactForm" method="POST" novalidate>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input name="name" id="name" type="text" required />
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input name="email" id="email" type="email" required />
+    <small id="emailHelp" class="form-text text-muted">
+      We'll never share your email with anyone else.
+    </small>
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone:</label>
+    <input name="phone" id="phone" type="tel" />
+  </div>
+
+  {% if form_type == "quote" %}
+    <div class="form-group">
+      <label for="location">Project Location:</label>
+      <input name="location" id="location" type="text" placeholder="City, State" />
+    </div>
+
+    <div class="form-group">
+      <label for="project_type">Project Type:</label>
+      <select name="project_type" id="project_type">
+        <option value="">Select project type</option>
+        <option value="new-playground">New playground</option>
+        <option value="replacement">Replace existing playground</option>
+        <option value="expansion">Expansion / add-on</option>
+        <option value="shade">Shade structure</option>
+        <option value="surfacing">Surfacing only</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="customer_type">Organization Type:</label>
+      <select name="customer_type" id="customer_type">
+        <option value="">Select organization type</option>
+        <option value="school">School</option>
+        <option value="church">Church</option>
+        <option value="park">Park / Municipality</option>
+        <option value="hoa">HOA / Community</option>
+        <option value="daycare">Daycare</option>
+        <option value="apartment">Apartment / Multi-family</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="budget">Budget:</label>
+      <select name="budget" id="budget">
+        <option value="">Select a budget range</option>
+        <option value="under-25k">Under $25,000</option>
+        <option value="25k-50k">$25,000–$50,000</option>
+        <option value="50k-100k">$50,000–$100,000</option>
+        <option value="100k-250k">$100,000–$250,000</option>
+        <option value="250k-plus">$250,000+</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="timeframe">Timeframe:</label>
+      <select name="timeframe" id="timeframe">
+        <option value="">Select a timeframe</option>
+        <option value="asap">ASAP</option>
+        <option value="1-3-months">1–3 months</option>
+        <option value="3-6-months">3–6 months</option>
+        <option value="6-12-months">6–12 months</option>
+        <option value="12-plus-months">12+ months</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="contact_preference">Preferred Contact Method:</label>
+      <select name="contact_preference" id="contact_preference">
+        <option value="">Select preferred contact method</option>
+        <option value="email">Email</option>
+        <option value="phone">Phone</option>
+      </select>
+    </div>
+  {% endif %}
+
+  <div class="form-group">
+    <label for="message">
+      {% if form_type == "quote" %}
+        Tell us about your project:
+      {% else %}
+        Message:
+      {% endif %}
+    </label>
+    <textarea name="message" id="message" rows="6" required></textarea>
+  </div>
+
+  <div class="hp" aria-hidden="true">
+    <label for="company">Company</label>
+    <input type="text" id="company" name="company" tabindex="-1" autocomplete="off" />
+  </div>
+
+  <input type="hidden" name="form_started_at" id="form_started_at" value="">
+  <input type="hidden" name="recaptcha" id="recaptcha" />
+  <input type="hidden" name="form_type" id="form_type" value="{{ form_type }}">
+
+  <button type="submit" class="btn btn-primary" id="submitBtn">
+    {% if form_type == "quote" %}
+      Request Quote
+    {% else %}
+      Submit
+    {% endif %}
+  </button>
+
+  <div><p id="result-text" role="status" aria-live="polite"></p></div>
+</form>
+
+<style>
+  .hp { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+</style>
+
+<script src="https://www.google.com/recaptcha/api.js?render=6LcJCVscAAAAAI8N3u9Pk1C7RlKg0n04CIXkxyek" async defer></script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    var startedAt = document.getElementById('form_started_at');
+    if (startedAt) startedAt.value = Date.now().toString();
+  });
+
+  const endpoint = 'https://1z3ri7ni2f.execute-api.us-east-1.amazonaws.com/default/lambda_SES';
+  const siteKey = '6LcJCVscAAAAAI8N3u9Pk1C7RlKg0n04CIXkxyek';
+
+  const form = document.getElementById('contactForm');
+  const resultText = document.getElementById('result-text');
+  const submitBtn = document.getElementById('submitBtn');
+
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        resultText.textContent = 'Please fill out the required fields.';
+        return;
+      }
+
+      submitBtn.disabled = true;
+      resultText.textContent = 'Sending…';
+
+      grecaptcha.ready(function() {
+        grecaptcha.execute(siteKey, { action: 'contact_submit' }).then(function(token) {
+          document.getElementById('recaptcha').value = token;
+
+          const body = JSON.stringify({
+            senderName: form.name.value.trim(),
+            senderEmail: form.email.value.trim(),
+            senderPhone: form.phone.value.trim(),
+            message: form.message.value.trim(),
+            location: form.location ? form.location.value.trim() : '',
+            projectType: form.project_type ? form.project_type.value.trim() : '',
+            customerType: form.customer_type ? form.customer_type.value.trim() : '',
+            budget: form.budget ? form.budget.value.trim() : '',
+            timeframe: form.timeframe ? form.timeframe.value.trim() : '',
+            contactPreference: form.contact_preference ? form.contact_preference.value.trim() : '',
+            formType: form.form_type ? form.form_type.value : '',
+            captcha: token,
+            company: document.getElementById('company').value || '',
+            form_started_at: document.getElementById('form_started_at').value
+          });
+
+          fetch(endpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: body
+          })
+          .then(async (res) => {
+            await res.text();
+            if (res.ok) {
+              resultText.textContent = 'Email sent successfully!';
+              setTimeout(() => { window.location.href = '/thank-you'; }, 2000);
+            } else {
+              resultText.textContent = 'An error occurred. Please call or email us from the footer.';
+            }
+          })
+          .catch(() => {
+            resultText.textContent = 'Network error. Please try again later.';
+          })
+          .finally(() => {
+            submitBtn.disabled = false;
+          });
+        });
+      });
+    });
+  }
+</script>

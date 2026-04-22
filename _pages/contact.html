@@ -5,152 +5,33 @@ permalink: /contact/
 ---
 
 <div class="container">
-
-  <div class="row">         
+  <div class="row">
     <div class="col-md-6">
       <h2>Get In Touch</h2>
- <!-- 
-      <div>  
-        <iframe                
-          width="450"          
-          height="250"         
-          frameborder="0"      
-          style="border:0"     
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBN9Fw1TsA7wjqQCR9EwNT3wiOzR3wYdJU&q=Tulsa+OK" allowfullscreen>
-        </iframe>
-      </div>
- -->
-          
+
       <div class="bg-light">
-	<p><i class="fa-regular fa-map-marker" aria-hidden="true"></i> -  7170 S. Braden Avenue, Suite 195, Tulsa, Oklahoma</p>
-	<p><i class="fa-regular fa-phone" aria-hidden="true"></i> - Oklahoma: (918) 992-3278</p>         
-	<p><i class="fa-regular fa-phone" aria-hidden="true"></i> - Arkansas: (479) 364-6145</p>         
-	<p> <ul class="list-unstyled list-inline">
-      <li class="list-inline-item"><a href="http://twitter.com/playworldplay"><i class="fa-brands fa-fw fa-x-twitter fa-2x" aria-hidden="true"></i>(Formerly Twitter)</a></li>
-      <li class="list-inline-item"><a href="https://www.facebook.com/happyplaygrounds"><i class="fa-brands fa-fw fa-facebook fa-2x" aria-hidden="true"></i>Facebook</a></li>
-   </ul></p>
-	<p> <ul class="list-unstyled list-inline marketing-site-footer-menu-social">
-      <li class="list-inline-item"><a href="http://linkedin.com/company/happyplaygrounds"><i class="fa-brands fa-fw fa-linkedin fa-2x"></i>LinkedIn</a></li>
-      <li class="list-inline-item"><a href="https://www.instagram.com/happyplaygrounds/?hl=en"><i class="fa-brands fa-fw fa-instagram fa-2x" aria-hidden="true"></i>Instagram</a></li>
-   </ul></p>
+        <p><i class="fa-regular fa-map-marker" aria-hidden="true"></i> - 7170 S. Braden Avenue, Suite 195, Tulsa, Oklahoma</p>
+        <p><i class="fa-regular fa-phone" aria-hidden="true"></i> - Oklahoma: (918) 992-3278</p>
+        <p><i class="fa-regular fa-phone" aria-hidden="true"></i> - Arkansas: (479) 364-6145</p>
+
+        <p>
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item"><a href="http://twitter.com/playworldplay"><i class="fa-brands fa-fw fa-x-twitter fa-2x" aria-hidden="true"></i>(Formerly Twitter)</a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/happyplaygrounds"><i class="fa-brands fa-fw fa-facebook fa-2x" aria-hidden="true"></i>Facebook</a></li>
+          </ul>
+        </p>
+
+        <p>
+          <ul class="list-unstyled list-inline marketing-site-footer-menu-social">
+            <li class="list-inline-item"><a href="http://linkedin.com/company/happyplaygrounds"><i class="fa-brands fa-fw fa-linkedin fa-2x"></i>LinkedIn</a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/happyplaygrounds/?hl=en"><i class="fa-brands fa-fw fa-instagram fa-2x" aria-hidden="true"></i>Instagram</a></li>
+          </ul>
+        </p>
       </div>
     </div>
-        
-<div class="col-md-6">
-<h2>Email Us</h2>
-<form id="contact" method="POST" novalidate>
-  <div class="form-group">
-    <label for="name">Name:</label>
-    <input name="name" id="name" type="text" required />
+
+    <div class="col-md-6">
+      {% include contact-form.html form_type="contact" %}
+    </div>
   </div>
-
-  <div class="form-group">
-    <label for="email">Email:</label>
-    <input name="email" id="email" type="email" required />
-    <small id="emailHelp" class="form-text text-muted">
-      We'll never share your email with anyone else.
-    </small>
-  </div>
-
-  <div class="form-group">
-    <label for="phone">Phone:</label>
-    <input name="phone" id="phone" type="tel" />
-  </div>
-
-  <div class="form-group">
-    <label for="message">Message:</label>
-    <textarea name="message" id="message" rows="6" required></textarea>
-  </div>
-
-  <!-- Honeypot (hidden off-screen, not display:none) -->
-  <div class="hp" aria-hidden="true">
-    <label for="company">Company</label>
-    <input type="text" id="company" name="company" tabindex="-1" autocomplete="off" />
-  </div>
-
-  <!-- Timestamp trap (set at load) -->
-  <input type="hidden" name="form_started_at" id="form_started_at" value="">
-
-  <!-- reCAPTCHA v3 token lives here (filled right before submit) -->
-  <input type="hidden" name="recaptcha" id="recaptcha" />
-
-  <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
-
-  <div><p id="result-text" role="status" aria-live="polite"></p></div>
-</form>
-	</div>
-	</div>
-
-<style>
-  .hp{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;}
-</style>
-
-<!-- reCAPTCHA v3 (use your site key) -->
-<script src="https://www.google.com/recaptcha/api.js?render=6LcJCVscAAAAAI8N3u9Pk1C7RlKg0n04CIXkxyek" async defer></script>
-
-<script>
-  // set timestamp once when the page loads
-  window.addEventListener('DOMContentLoaded', function(){
-    document.getElementById('form_started_at').value = Date.now().toString();
-  });
-
-  const endpoint = 'https://1z3ri7ni2f.execute-api.us-east-1.amazonaws.com/default/lambda_SES';
-  const siteKey = '6LcJCVscAAAAAI8N3u9Pk1C7RlKg0n04CIXkxyek'; // v3 site key
-
-  const form = document.getElementById('contact');
-  const resultText = document.getElementById('result-text');
-  const submitBtn = document.getElementById('submitBtn');
-
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-
-    // Basic client checks
-    if (!form.checkValidity()) {
-      resultText.textContent = 'Please fill out the required fields.';
-      return;
-    }
-
-    submitBtn.disabled = true;
-    resultText.textContent = 'Sending…';
-
-    // Get a FRESH v3 token *at submit time*
-    grecaptcha.ready(function() {
-      grecaptcha.execute(siteKey, { action: 'contact_submit' }).then(function(token) {
-        document.getElementById('recaptcha').value = token;
-
-        const body = JSON.stringify({
-          senderName: form.name.value.trim(),
-          senderEmail: form.email.value.trim(),
-          senderPhone: form.phone.value.trim(),
-          message: form.message.value.trim(),
-          captcha: token,
-          // add traps too (server will check)
-          company: document.getElementById('company').value || '',
-          form_started_at: document.getElementById('form_started_at').value
-        });
-
-        fetch(endpoint, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body
-        })
-        .then(async (res) => {
-          const text = await res.text();
-          if (res.ok) {
-            resultText.textContent = 'Email sent successfully!';
-            // redirect only on success
-            setTimeout(() => { window.location.href = '/thank-you'; }, 2000);
-          } else {
-            resultText.textContent = 'An error occurred. Please call or email us from the footer.';
-          }
-        })
-        .catch(() => {
-          resultText.textContent = 'Network error. Please try again later.';
-        })
-        .finally(() => {
-          submitBtn.disabled = false;
-        });
-      });
-    });
-  });
-</script>
+</div>
