@@ -148,16 +148,17 @@
   if (form) {
     form.addEventListener('submit', function(e) {
       e.preventDefault();
+      form.scrollIntoView({ behavior: "smooth", block: "end"});
 
       if (!form.checkValidity()) {
         resultText.textContent = 'Please fill out the required fields.';
         return;
       }
 
-    if (form.message.value.trim().length < 10) {
-    	resultText.textContent = "Please add a few more details so we can help you better.";
-    	return;
-    }
+      if (form.message.value.trim().length < 10) {
+        resultText.textContent = "Please add a few more details so we can help you better.";
+        return;
+      }
 
       submitBtn.disabled = true;
       resultText.textContent = 'Sending…';
