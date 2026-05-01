@@ -21,20 +21,25 @@ layout: default
   	{% if remainder == 1 %}
 	{% assign rvalue = i | plus: 1 %}
         <div class="photo-section">
-	<div class="row justify-content-center">
-	<div class="col img-fit">
-        <img src="https://d29f0iknz8av0q.cloudfront.net/{{ page.photos.set }}/{{ page.photos.set }}-{{ i }}.jpg" alt="Photo {{ i }} from {{ page.photos.set | capitalize }}">
-	</div>
-	<div class="col img-fit">
-        <img src="https://d29f0iknz8av0q.cloudfront.net/{{ page.photos.set }}/{{ page.photos.set }}-{{ rvalue }}.jpg" alt="Photo {{ i }} from {{ page.photos.set | capitalize }}">
-	</div>
-	</div>
-	</div>
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-6 mb-2 img-fit">
+					<a href = "https://d29f0iknz8av0q.cloudfront.net/{{ page.photos.set }}/{{ page.photos.set }}-{{ i }}.jpg" class="image-popup">
+						<img src="https://d29f0iknz8av0q.cloudfront.net/{{ page.photos.set }}/{{ page.photos.set }}-{{ i }}.jpg" alt="Photo {{ i }} from {{ page.photos.set | capitalize }}">
+					</a>
+				</div>
+				<div class="col-12 col-md-6 mb-2 img-fit">
+					<a href = "https://d29f0iknz8av0q.cloudfront.net/{{ page.photos.set }}/{{ page.photos.set }}-{{ rvalue }}.jpg" class="image-popup">
+						<img src="https://d29f0iknz8av0q.cloudfront.net/{{ page.photos.set }}/{{ page.photos.set }}-{{ rvalue }}.jpg" alt="Photo {{ i }} from {{ page.photos.set | capitalize }}">
+					</a>	
+				</div>
+
+			</div>
+		</div>
 	{% else %}
 	   {% continue %}
 	{% endif %}
   {% endfor %}
    </div>
-<div>
-  <a href="{{ site.baseurl }}/gallery/">View Happy Image Gallery</a>
+<div style="margin: 0 35px">
+  <a href="{{ site.baseurl }}/gallery/">Back to Projects</a>
 </div>
