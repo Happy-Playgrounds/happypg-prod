@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+    .about-us-images img{
+        margin-bottom: 25px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    .purpose-text {
+        
+        text-align: center;
+        justify-content: center;
+    }
+    .purpose-text h5{
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 768px) {
+  .card img {
+  border-radius: 10px;
+  overflow: hidden;
+  }
+}
+
+#carouselExampleControls{
+    max-width: 1280px;
+}
