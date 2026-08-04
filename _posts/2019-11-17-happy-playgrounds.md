@@ -14,6 +14,7 @@ header:
     overlay_filter: 0.15
     teaser:  /assets/images/logo_v1.png # Shrink image to 575x216
     caption: "Happy Playgrounds, LLC"
+include_in_recents: false
 ---
 
 Hello, and welcome to our new website!

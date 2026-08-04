@@ -13,6 +13,7 @@ header:
     overlay_filter: 0.15
     teaser: https://d29f0iknz8av0q.cloudfront.net/delaware-cdc/delaware-blog-splash3.jpg   # Shrink image to 575x216 push
     caption: ""
+include_in_recents: true
 ---
 
 <h1>Honoring Culture Through Play:</h1> <h3>Grand Opening of the Delaware Tribe CDC Playgrounds</h3>

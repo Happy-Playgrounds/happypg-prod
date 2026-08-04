@@ -20,6 +20,9 @@ main:
     url: /blog/
   - title: "Contact Us"
     url: /contact/
+  - title: "Request a Quote"
+    url: /quote/
+    class: "nav-highlight-btn"
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

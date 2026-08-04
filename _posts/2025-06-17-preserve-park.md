@@ -14,6 +14,7 @@ header:
     overlay_filter: 0.15
     teaser: https://d29f0iknz8av0q.cloudfront.net/preserve-park/preserve-park-1.jpg   # Shrink image to 575x216 push
     caption: ""
+include_in_recents: true
 ---
   <title>Revitalizing Preserve Park</title>
 

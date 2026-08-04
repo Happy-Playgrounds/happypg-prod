@@ -13,6 +13,7 @@ header:
     overlay_filter: 0.15
     teaser: /assets/images/2020/07/05/happy-bday-teaser.jpg   # Shrink image to 575x216
     caption: "Jude Beck"
+include_in_recents: false
 ---
 
 It is hard to believe that we are half way through 2020. As I look back over the first six months of this year, my heart is filled with a variety of emotions. The COVID pandemic has claimed the lives of too many, destroyed the livelihood of business owners, stolen joy from our children, and worsened the emotional outlook for our elderly population.

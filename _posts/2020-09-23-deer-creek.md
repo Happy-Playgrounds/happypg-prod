@@ -15,6 +15,7 @@ header:
     overlay_filter: 0.15
     teaser: /assets/images/2020/09/23/deer-creek-teaser.jpg   # Shrink image to 575x216
     caption: "Happy Playgrounds, LLC"
+include_in_recents: true
 ---
 
 Deer Creek Elementary 4th and 5th Grade Center

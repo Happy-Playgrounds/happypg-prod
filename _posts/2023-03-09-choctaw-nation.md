@@ -15,6 +15,7 @@ header:
     overlay_filter: 0.15
     teaser: /assets/images/durant-1.jpg   # Shrink image to 575x216 push
     caption: "Happy Playgrounds, LLC"
+include_in_recents: true
 ---
 
 If you work for the [Choctaw Nation] [CN], live in or near Durant, and have young children, you are very

@@ -13,6 +13,7 @@ header:
     overlay_filter: 0.15
     teaser: /assets/images/2024/jenks-riverwalk/riverwalk-1.jpg   # Shrink image to 575x216 push
     caption: ""
+include_in_recents: true
 ---
 
 An outstanding property, like [Jenks Riverwalk] [JW], deserves a world class playground, and that is exactly what the [The Muscogee Nation] [MN], along with the Onefire team is providing [Jenks, OK] [Jenks] and its surrounding communities. Many of Happy Playgrounds' most memorable projects have been showcasing Native American culture, language preservation, and our unique heritage. 

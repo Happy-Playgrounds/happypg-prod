@@ -14,6 +14,7 @@ header:
     overlay_filter: 0.15
     teaser: /assets/images/2024/center-for-individuals/center-2.jpg   # Shrink image to 575x216 push
     caption: ""
+include_in_recents: true
 ---
 
 Our Happy Labor of Love

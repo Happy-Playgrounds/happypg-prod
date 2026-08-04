@@ -13,6 +13,7 @@ header:
     overlay_filter: 0.15
     teaser: https://d29f0iknz8av0q.cloudfront.net/town-of-washington/IMG_7294.jpeg   # Shrink image to 575x216 push
     caption: ""
+include_in_recents: true
 ---
 
 The [Town of Washington][TWA] has officially completed an exciting park improvement project with the installation of a brand-new playground—finished just ahead of the winter weather.

@@ -16,6 +16,7 @@ header:
     overlay_filter: 0.15
     teaser: /assets/images/2021/02/15/manuel-perez-teaser.jpg   # Shrink image to 575x216
     caption: "Happy Playgrounds, LLC"
+include_in_recents: true
 ---
 
 I’m sitting in my office with the fireplace going, looking out my window as snow gently falls. It is a beautiful but cold Sunday afternoon, and the perfect day to quietly reflect on matters.
