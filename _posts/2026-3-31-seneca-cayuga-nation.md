@@ -13,6 +13,7 @@ header:
     overlay_filter: 0.15
     teaser: https://d29f0iknz8av0q.cloudfront.net/seneca-cayuga-nation/SNC%20-%20GETTING%20THE%20DETAILS%20RIGHT.JPG  # Shrink image to 575x216 push
     caption: ""
+include_in_recents: true
 ---
 
 

@@ -13,6 +13,7 @@ header:
     overlay_filter: 0.15
     teaser: https://d29f0iknz8av0q.cloudfront.net/anderson-park/IMG_2425.JPG   # Shrink image to 575x216 push
     caption: ""
+include_in_recents: true
 ---
 
 Anderson Park in Edmond, Oklahoma is soon to be open to the public! The park will include a new Playworld playground, as well as a new splashpad. Our team here at Happy had such fun designing this one.

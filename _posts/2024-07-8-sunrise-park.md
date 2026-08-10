@@ -13,6 +13,7 @@ header:
     overlay_filter: 0.15
     teaser: https://d29f0iknz8av0q.cloudfront.net/sunrise-park/sunrise-park2.jpg   # Shrink image to 575x216 push
     caption: ""
+include_in_recents: true
 ---
 
 WHAT A TRANSORMATION! Sunrise Park in the [City of Norman] [CN] needed an upgrade and the Norman Parks and Recreation team, along with our "Happy Team" delivered. Sunrise Park has the first Playworld Quito (pronounced Key-Tow) installed in the state of Oklahoma. Quito is a freestanding net climber that takes kids on a journey to the center of the web. 

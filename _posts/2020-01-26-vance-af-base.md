@@ -14,6 +14,7 @@ header:
     overlay_filter: 0.15
     teaser: /assets/images/2020/01/26/vance-teaser.jpg   # Shrink image to 575x216
     caption: "Happy Playgrounds, LLC"
+include_in_recents: true
 ---
 
 2019 was an incredible year,

@@ -1,0 +1,41 @@
+<aside class="sidebar-container">
+
+{% if page.testimonial %}
+  <section>
+    <h3 class="sidebar-title">Why Choose Us</h3>
+    <blockquote class="testimonial-quote">
+      <p>“{{ page.testimonial.quote }}”</p>
+      
+      <div class="testimonial-author">
+        {% if page.testimonial.author_image %}
+          <img src="{{ page.testimonial.author_image | relative_url }}" alt="{{ page.testimonial.author }}" class="author-photo">
+        {% endif %}
+        <cite>
+          <strong>{{ page.testimonial.author }}</strong>
+          {% if page.testimonial.role %}
+            <span>{{ page.testimonial.role }}</span>
+          {% endif %}
+        </cite>
+      </div>
+    </blockquote>
+  </section>
+{% endif %}
+
+<section>
+  <h3 class="sidebar-title">Recent Projects</h3>
+  <div class="sidebar-projects-grid">
+    {% assign project_posts = site.posts | where: "include_in_recents", true %}
+    {% for project in project_posts limit:4 %}
+      <a href="{{ project.url | relative_url }}" class="sidebar-project-card">
+        <div class="img-frame">
+          <img src="{{ project.header.teaser | relative_url }}" alt="{{ project.title }}" loading="lazy">
+        </div>
+        <p class="sidebar-project-title">{{ project.title }}</p>
+
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+
+</aside>

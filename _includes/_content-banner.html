@@ -1,0 +1,18 @@
+<!-- _includes/hero-banner.html -->
+<section 
+  class="content-banner d-flex align-items-center" 
+  style="--banner-bg: url('{{ page.banner.banner_image | default: '/assets/images/banners/default-banner.jpg' | relative_url }}');">
+  
+  <div class="container-fluid">
+    <div class="d-flex align-items-center justify-content-start col-md-12 p-2">
+      
+      <!-- Dynamic Icon with fallback -->
+      {% assign icon_url = page.banner.banner_icon | default: 'awsurl-redacted' %}
+      <img src="{{ icon_url }}" width="75" height="75" alt="{{ page.title }} Icon" class="me-3" />
+      
+      <!-- Dynamic Title -->
+      <h1 class="p-2 m-0 banner-title">{{ page.banner.banner_text}}</h1>
+
+    </div>
+  </div>
+</section>

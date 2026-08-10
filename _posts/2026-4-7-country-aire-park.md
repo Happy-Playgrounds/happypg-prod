@@ -13,6 +13,7 @@ header:
     overlay_filter: 0.15
     teaser: https://d29f0iknz8av0q.cloudfront.net/country-aire-park/IMG_5445.jpeg  # Shrink image to 575x216 push
     caption: ""
+include_in_recents: false
 ---
 
 

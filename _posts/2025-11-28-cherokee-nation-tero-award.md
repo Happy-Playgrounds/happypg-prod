@@ -15,6 +15,7 @@ header:
   overlay_filter: 0.15
   teaser: https://d29f0iknz8av0q.cloudfront.net/Tero-home-web.jpg               # 575x216-ish crop, or same image
   caption: ""
+include_in_recents: false
 ---
 
 <h2>Honored by Cherokee Nation TERO</h2>

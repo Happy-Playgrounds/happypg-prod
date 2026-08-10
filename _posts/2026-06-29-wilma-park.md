@@ -13,6 +13,7 @@ header:
     overlay_filter: 0.15
     teaser: https://d29f0iknz8av0q.cloudfront.net/wilma-mankiller/Wilma-mankiller-capital-park-oklahoma-5.jpg  # Shrink image to 575x216 push
     caption: ""
+include_in_recents: true
 ---
 
 

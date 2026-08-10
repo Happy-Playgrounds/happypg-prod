@@ -15,6 +15,7 @@ header:
   overlay_filter: 0.15
   teaser: https://d29f0iknz8av0q.cloudfront.net/south_tulsa_baptist/south_tulsa_baptist.jpg
   caption: ""
+include_in_recents: true
 ---
 
 <h2>Partner Spotlight: South Tulsa Baptist</h2>
