@@ -19,7 +19,7 @@ include_in_recents: true
 
 <h1>Happy Playgrounds Delivers Turf Replacement Project for Tulsa CAP Eugene Field Ahead of the School Year</h1>
 
-When Tulsa CAP School District needed to replace aging artificial turf across their campus, they turned to Happy Playgrounds LLC to get the job done. The challenge? Complete the entire project just days before students returned for the new school year.
+When Tulsa CAP needed to replace aging artificial turf across their campus, they turned to Happy Playgrounds LLC to get the job done. The challenge? Complete the entire project just days before students returned for the new school year.
 
 With a tight deadline and no room for delays, our team got to work.
 
@@ -106,7 +106,7 @@ Looking across the completed project, it's hard to believe how much was accompli
 
 Projects like this demonstrate what sets Happy Playgrounds apart: the ability to deliver high-quality results under demanding schedules while maintaining a strong commitment to safety, craftsmanship, and customer service.
 
-We are proud to have partnered with Tulsa CAP School District on this important improvement project and grateful for the opportunity to help create better spaces for children to learn, play, and grow.
+We are proud to have partnered with Tulsa CAP on this important improvement project and grateful for the opportunity to help create better spaces for children to learn, play, and grow.
 
 If your school, church, daycare, or community organization is considering a synthetic turf installation or replacement, Happy Playgrounds LLC has the experience and expertise to make your vision a reality.
 
